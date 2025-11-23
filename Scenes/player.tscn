@@ -20,6 +20,7 @@ region = Rect2(64, 0, 32, 60)
 atlas = ExtResource("2_6t5aa")
 region = Rect2(96, 0, 32, 60)
 
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_6t5aa"]
 atlas = ExtResource("3_6t5aa")
 region = Rect2(0, 0, 32, 60)
@@ -41,6 +42,29 @@ atlas = ExtResource("3_6t5aa")
 region = Rect2(128, 0, 32, 60)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tx1dd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3wgy"]
+atlas = ExtResource("3_6t5aa")
+region = Rect2(0, 0, 32, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3smsa"]
+atlas = ExtResource("3_6t5aa")
+region = Rect2(32, 0, 32, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8erm5"]
+atlas = ExtResource("3_6t5aa")
+region = Rect2(64, 0, 32, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
+atlas = ExtResource("3_6t5aa")
+region = Rect2(96, 0, 32, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tx1dd"]
+atlas = ExtResource("3_6t5aa")
+region = Rect2(128, 0, 32, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gymyn"]
+bb4de7c67a3dc80043da582e61510fc4589539fa
 atlas = ExtResource("3_6t5aa")
 region = Rect2(160, 0, 32, 60)
 
@@ -65,9 +89,12 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+
 "texture": SubResource("AtlasTexture_6t5aa")
 }, {
 "duration": 1.0,
+
+bb4de7c67a3dc80043da582e61510fc4589539fa
 "texture": SubResource("AtlasTexture_x3wgy")
 }, {
 "duration": 1.0,
@@ -81,6 +108,7 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_tx1dd")
+
 }],
 "loop": true,
 "name": &"Walking",
@@ -95,11 +123,33 @@ height = 48.0
 script = ExtResource("1_cvnsp")
 movement_speed = 200.0
 
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gymyn")
+}],
+"loop": true,
+"name": &"Walking",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ukyrk"]
+radius = 8.0
+height = 56.0
+
+[node name="player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_cvnsp")
+movement_speed = 150.0
+bb4de7c67a3dc80043da582e61510fc4589539fa
+
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_pu2lt")
 animation = &"Walking"
 autoplay = "Idle"
+
+frame_progress = 0.59735763
+bb4de7c67a3dc80043da582e61510fc4589539fa
 
 [node name="collision" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_ukyrk")
