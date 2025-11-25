@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://bimxp1ndifucs"]
+
+[ext_resource type="Script" uid="uid://djk654ttfmxtx" path="res://Scripts/interactable_object.gd" id="1_0vujv"]
+[ext_resource type="Texture2D" uid="uid://bmep8frdgx4tk" path="res://Assets/Texture/Extra/Bench and Gravestones1.png" id="2_pj2rk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a51nr"]
+size = Vector2(70, 49)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_a51nr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5hfko"]
+size = Vector2(54, 14.5)
+
+[node name="InteractableObject" type="Area2D"]
+y_sort_enabled = true
+position = Vector2(22, 19)
+input_pickable = false
+script = ExtResource("1_0vujv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(12, 9)
+texture = ExtResource("2_pj2rk")
+hframes = 2
+vframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+y_sort_enabled = true
+position = Vector2(14, 6)
+shape = SubResource("RectangleShape2D_a51nr")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+y_sort_enabled = true
+position = Vector2(12, 8)
+collision_layer = 2
+physics_material_override = SubResource("PhysicsMaterial_a51nr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+y_sort_enabled = true
+position = Vector2(1, 7)
+shape = SubResource("RectangleShape2D_5hfko")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
