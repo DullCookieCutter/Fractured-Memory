@@ -1,0 +1,71 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx6d8k41hb7sh"]
+
+[ext_resource type="Script" uid="uid://c8obbi84k8hqc" path="res://Scripts/EndingSceneManager.gd" id="1_5eed8"]
+[ext_resource type="Texture2D" uid="uid://r6dldkgdgpw5" path="res://Assets/Texture/UI Assets/UI Dialogue Box Large.png" id="1_oeuyo"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5eed8"]
+texture = ExtResource("1_oeuyo")
+texture_margin_left = 16.0
+texture_margin_top = 16.0
+texture_margin_right = 16.0
+texture_margin_bottom = 16.0
+
+[node name="ending_scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5eed8")
+
+[node name="WhiteBackground" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DialogueBox" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.025
+anchor_top = 0.64000005
+anchor_right = 1.041
+anchor_bottom = 1.0760001
+offset_left = 28.800001
+offset_top = 55.079987
+offset_right = -47.232056
+offset_bottom = -49.248047
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_5eed8")
+
+[node name="MarginContainer" type="MarginContainer" parent="DialogueBox"]
+layout_mode = 2
+
+[node name="DialogueLabel" type="RichTextLabel" parent="DialogueBox/MarginContainer"]
+custom_minimum_size = Vector2(21, 21)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.8727458, 0, 0.09599952, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+autowrap_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.725
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 21.0
+offset_top = 18.199982
+offset_right = -22.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HistoryLabel" type="RichTextLabel" parent="ScrollContainer"]
+layout_mode = 2

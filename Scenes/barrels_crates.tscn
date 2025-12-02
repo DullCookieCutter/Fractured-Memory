@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://d3008ucavqt5h"]
+
+[ext_resource type="PackedScene" uid="uid://bimxp1ndifucs" path="res://Scenes/interactable_object.tscn" id="1_3jdlc"]
+[ext_resource type="Script" uid="uid://caq7f78bhiwf6" path="res://Scripts/barrels_crates.gd" id="1_8ervw"]
+[ext_resource type="Texture2D" uid="uid://bmep8frdgx4tk" path="res://Assets/Texture/Extra/Bench and Gravestones1.png" id="1_ttu5i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ervw"]
+size = Vector2(33, 25)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_807qk"]
+radius = 36.013885
+
+[node name="BarrelsCrates" type="StaticBody2D"]
+position = Vector2(11, 2)
+script = ExtResource("1_8ervw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-11.5, 1.5)
+shape = SubResource("RectangleShape2D_8ervw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ttu5i")
+hframes = 3
+vframes = 4
+frame = 5
+
+[node name="Interactable" parent="." instance=ExtResource("1_3jdlc")]
+interact_name = "Inspect"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(-11, -2)
+shape = SubResource("CircleShape2D_807qk")

@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://ya0q2y6ac4jv"]
+
+[ext_resource type="Script" uid="uid://bn25tsvsl4cm7" path="res://Scripts/signage_dialogue.gd" id="1_2wkn6"]
+[ext_resource type="Texture2D" uid="uid://bmep8frdgx4tk" path="res://Assets/Texture/Extra/Bench and Gravestones1.png" id="2_3edkt"]
+[ext_resource type="PackedScene" uid="uid://bimxp1ndifucs" path="res://Scenes/interactable_object.tscn" id="3_jhj4s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0rssp"]
+size = Vector2(12, 10)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vajel"]
+radius = 29.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2(5, -2)
+script = ExtResource("1_2wkn6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5, 14)
+shape = SubResource("RectangleShape2D_0rssp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_3edkt")
+hframes = 5
+vframes = 4
+frame = 6
+region_rect = Rect2(0, 0, 225, 258)
+
+[node name="Interactable" parent="." instance=ExtResource("3_jhj4s")]
+interact_name = "Read Signage"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(-5, 13)
+shape = SubResource("CircleShape2D_vajel")

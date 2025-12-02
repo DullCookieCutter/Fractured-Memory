@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://e0e6rjf0q3ec"]
+
+[ext_resource type="PackedScene" uid="uid://bimxp1ndifucs" path="res://Scenes/interactable_object.tscn" id="1_70kxj"]
+[ext_resource type="Script" uid="uid://b55vtotqwlhgb" path="res://Scripts/doors.gd" id="1_bd7c1"]
+[ext_resource type="Texture2D" uid="uid://cv23cpetxqsik" path="res://Assets/Texture/Tiled_files/Dungeon_Tiles.png" id="2_a4a4d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5j1im"]
+size = Vector2(32, 13.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brwkg"]
+size = Vector2(45, 24.5)
+
+[node name="Doors" type="StaticBody2D"]
+script = ExtResource("1_bd7c1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(17, 42.75)
+shape = SubResource("RectangleShape2D_5j1im")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(17, 25)
+texture = ExtResource("2_a4a4d")
+region_enabled = true
+region_rect = Rect2(0.24044037, 112.98681, 31.703705, 48.592598)
+
+[node name="Interactable" parent="." instance=ExtResource("1_70kxj")]
+interact_name = "Inspect Door"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(16, 44)
+shape = SubResource("RectangleShape2D_brwkg")

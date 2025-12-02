@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://lcer646gb1hw"]
+
+[ext_resource type="Script" uid="uid://dyt5j313ggg5c" path="res://Scripts/typing_word.gd" id="1_3ugfo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3pjiq"]
+size = Vector2(85.5, 40)
+
+[node name="TypingWord" type="Area2D"]
+z_index = 10
+script = ExtResource("1_3ugfo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(595.25, 291)
+shape = SubResource("RectangleShape2D_3pjiq")
+
+[node name="Label" type="RichTextLabel" parent="."]
+offset_left = 560.0
+offset_top = 275.0
+offset_right = 701.0
+offset_bottom = 309.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 24
+text = "VISIBLE"
+
+[connection signal="area_entered" from="." to="." method="_on_typing_word_area_entered"]

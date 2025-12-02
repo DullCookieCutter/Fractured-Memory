@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx1hgr0clflv2"]
+
+[ext_resource type="Script" uid="uid://b3x01mlpsq7j2" path="res://Scripts/name_input.gd" id="1_5dtwi"]
+[ext_resource type="Texture2D" uid="uid://r6dldkgdgpw5" path="res://Assets/Texture/UI Assets/UI Dialogue Box Large.png" id="2_k2ugr"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kq6fy"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+texture = ExtResource("2_k2ugr")
+
+[node name="NameInput" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5dtwi")
+
+[node name="BlackOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Center" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NameDialog" type="PanelContainer" parent="Center"]
+clip_contents = true
+custom_minimum_size = Vector2(2.51, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_kq6fy")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Center/NameDialog"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="FeedbackLabel" type="Label" parent="Center/NameDialog/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Center/NameDialog/VBoxContainer"]
+layout_mode = 2
+text = "Enter your character's name: "
+
+[node name="NameLineEdit" type="LineEdit" parent="Center/NameDialog/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Name"
+
+[node name="ConfirmButton" type="Button" parent="Center/NameDialog/VBoxContainer"]
+layout_mode = 2
+text = "Confirm"

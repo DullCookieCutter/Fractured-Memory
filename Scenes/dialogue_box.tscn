@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce1ly03hvloqm"]
+
+[ext_resource type="Script" uid="uid://ded0xoqk4ml8c" path="res://Scripts/DialogueBox.gd" id="1_l8qb8"]
+[ext_resource type="Texture2D" uid="uid://r6dldkgdgpw5" path="res://Assets/Texture/UI Assets/UI Dialogue Box Large.png" id="2_kyvu4"]
+
+[node name="DialogueBox" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_l8qb8")
+
+[node name="TextureRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 10.525001
+anchor_top = 10.3
+anchor_right = 18.550001
+anchor_bottom = 12.3
+offset_left = -3.0517578e-05
+offset_right = -6.1035156e-05
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_kyvu4")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = -14.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ContinuePrompt" type="Label" parent="TextureRect/Label"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -294.0
+offset_top = -12.0
+offset_bottom = 11.0
+grow_horizontal = 0
+grow_vertical = 0
