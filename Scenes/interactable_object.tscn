@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+[gd_scene load_steps=2 format=3 uid="uid://bimxp1ndifucs"]
+
+[ext_resource type="Script" uid="uid://c2wq07771w8o3" path="res://Scripts/interactable.gd" id="1_0vujv"]
+
+[node name="Interactable" type="Area2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_0vujv")
+=======
 [gd_scene load_steps=6 format=3 uid="uid://bimxp1ndifucs"]
 
 [ext_resource type="Script" uid="uid://djk654ttfmxtx" path="res://Scripts/interactable_object.gd" id="1_0vujv"]
@@ -43,3 +53,4 @@ shape = SubResource("RectangleShape2D_5hfko")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a

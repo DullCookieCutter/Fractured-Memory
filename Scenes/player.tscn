@@ -1,8 +1,12 @@
-[gd_scene load_steps=16 format=3 uid="uid://wcsmkqtodipm"]
+[gd_scene load_steps=17 format=3 uid="uid://wcsmkqtodipm"]
 
 [ext_resource type="Script" uid="uid://8eihr2n63q5u" path="res://Scripts/player_movement.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://dbo4des6cornu" path="res://Assets/Texture/Extra/Sprite-0003.png" id="2_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://c8g5ilofbmj8b" path="res://Assets/Texture/Extra/Sprite-0006.png" id="3_6t5aa"]
+<<<<<<< HEAD
+[ext_resource type="PackedScene" uid="uid://cr5ghlg3ie7av" path="res://Scenes/interacting_component.tscn" id="4_vgqql"]
+=======
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vgqql"]
 atlas = ExtResource("2_6t5aa")
@@ -91,12 +95,16 @@ animations = [{
 radius = 8.0
 height = 22.0
 
+<<<<<<< HEAD
+[node name="player" type="CharacterBody2D" groups=["player"]]
+=======
 [node name="player" type="CharacterBody2D"]
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a
 z_index = 1
 y_sort_enabled = true
 motion_mode = 1
 script = ExtResource("1_cvnsp")
-movement_speed = 150.0
+movement_speed = 300.0
 
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
@@ -111,3 +119,6 @@ offset = Vector2(0, -7.31)
 y_sort_enabled = true
 position = Vector2(1, 9)
 shape = SubResource("CapsuleShape2D_ukyrk")
+
+[node name="InteractingComponent" parent="." instance=ExtResource("4_vgqql")]
+position = Vector2(1, 9)

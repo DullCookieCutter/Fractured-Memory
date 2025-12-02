@@ -14,9 +14,12 @@ func show_dialogue(message: String):
 
 func hide_dialogue():
 	self.hide()
+<<<<<<< HEAD
+=======
 
 func _ready() -> void:
 	pass
 	
 func _process(_delta: float) -> void:
 	pass
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a

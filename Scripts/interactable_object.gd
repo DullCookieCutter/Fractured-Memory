@@ -4,7 +4,11 @@ extends Area2D
 @onready var hud = get_tree().get_first_node_in_group("hud")
 var player_is_nearby: bool = false
 var interaction_active: bool = false
+<<<<<<< HEAD
+const INTERACT_ACTION = "interact"
+=======
 const INTERACT_ACTION = "Interact"
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a
 
 signal interaction_possible(is_possible)
 

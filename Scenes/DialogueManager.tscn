@@ -4,10 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://r6dldkgdgpw5" path="res://Assets/Texture/UI Assets/UI Dialogue Box Large.png" id="2_tblw1"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_noxhh"]
+<<<<<<< HEAD
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+=======
 content_margin_left = 25.0
 content_margin_top = 15.0
 content_margin_right = 25.0
 content_margin_bottom = 15.0
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a
 texture = ExtResource("2_tblw1")
 texture_margin_left = 16.0
 texture_margin_top = 16.0
@@ -30,7 +37,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+<<<<<<< HEAD
+color = Color(0.043137256, 0.043137256, 0.043137256, 1)
+=======
 color = Color(0, 0, 0, 1)
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a
 
 [node name="DialogueBox" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -50,6 +61,26 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
+<<<<<<< HEAD
+[node name="DialogueLabel" type="RichTextLabel" parent="DialogueBox/MarginContainer"]
+custom_minimum_size = Vector2(21, 21)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.8727458, 0, 0.09599952, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+autowrap_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.056
+anchor_bottom = 0.106000006
+offset_left = 16.0
+offset_top = 483.0
+offset_right = 1068.488
+offset_bottom = 567.312
+=======
 [node name="DialogueLabel" type="Label" parent="DialogueBox/MarginContainer"]
 custom_minimum_size = Vector2(21, 21)
 layout_mode = 2
@@ -61,6 +92,7 @@ offset_left = 18.0
 offset_top = 486.0
 offset_right = 1133.0
 offset_bottom = 631.0
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a
 
 [node name="HistoryLabel" type="RichTextLabel" parent="ScrollContainer"]
 layout_mode = 2

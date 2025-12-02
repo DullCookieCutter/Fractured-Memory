@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://5vy1gsa80g3y"]
+
+[ext_resource type="Texture2D" uid="uid://bmep8frdgx4tk" path="res://Assets/Texture/Extra/Bench and Gravestones1.png" id="2_j5ty5"]
+[ext_resource type="PackedScene" uid="uid://bimxp1ndifucs" path="res://Scenes/interactable_object.tscn" id="3_gw7br"]
+[ext_resource type="Script" uid="uid://cdlfmfye5rid2" path="res://Scripts/grave_dialogue.gd" id="4_7h6it"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7h6it"]
+size = Vector2(63, 23.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j5ty5"]
+size = Vector2(75, 40)
+
+[node name="Grave1" type="StaticBody2D"]
+script = ExtResource("4_7h6it")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.5, 14.75)
+shape = SubResource("RectangleShape2D_7h6it")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_j5ty5")
+hframes = 3
+vframes = 4
+frame = 11
+
+[node name="Interactable" parent="." instance=ExtResource("3_gw7br")]
+interact_name = "Inspect"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(-6.5, 15.5)
+shape = SubResource("RectangleShape2D_j5ty5")

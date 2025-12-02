@@ -43,12 +43,30 @@ func _on_confirm_button_pressed(_new_text = null):
 	timer.start()
 	
 func _on_timer_timeout():
+<<<<<<< HEAD
+	print("--- TIMER TIMED OUT. ATTEMPTING SCENE CHANGE. ---")
+	
+=======
 	print("--- TIMER TIMED OUT. ATTEMPTING SCENE CHANGE. ---") 
 	var timer_node = get_tree().get_first_node_in_group("temporary_timer")	
 	if is_instance_valid(timer_node):
 		timer_node.queue_free()
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a
 	var error = get_tree().change_scene_to_file(GAME_SCENE_PATH)
 	
 	if error != OK:
 		print("ERROR: Failed to load scene! Check the path: " + GAME_SCENE_PATH)
 		print("Error Code: " + str(error))
+<<<<<<< HEAD
+		return
+	call_deferred("start_next_scene_dialogue")
+	
+func start_next_scene_dialogue():
+	if is_instance_valid(DialogueManager):
+		print("--- DialogueManager is ready. Starting dialogue. ---")
+		DialogueManager.start_dialogue("intro_narration")
+		queue_free()
+	else:
+		push_error("DialogueManager AutoLoad not found. Check Project Settings.")
+=======
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a

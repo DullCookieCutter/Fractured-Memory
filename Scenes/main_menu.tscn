@@ -40,11 +40,14 @@ layout_mode = 2
 size_flags_horizontal = 5
 text = "Start Game"
 
+<<<<<<< HEAD
+=======
 [node name="Options Button" type="Button" parent="MenuContainer"]
 layout_mode = 2
 size_flags_horizontal = 5
 text = "Options"
 
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a
 [node name="Quit Button" type="Button" parent="MenuContainer"]
 layout_mode = 2
 size_flags_horizontal = 5
@@ -57,5 +60,8 @@ autoplay = true
 parameters/looping = true
 
 [connection signal="pressed" from="MenuContainer/Start Button" to="." method="_on_start_button_pressed"]
+<<<<<<< HEAD
+=======
 [connection signal="pressed" from="MenuContainer/Options Button" to="." method="_on_options_button_pressed"]
+>>>>>>> 129ee4f4f9a9834257e8910df8188649eb3ff30a
 [connection signal="pressed" from="MenuContainer/Quit Button" to="." method="_on_quit_button_pressed"]
