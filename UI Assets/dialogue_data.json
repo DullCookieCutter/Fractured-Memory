@@ -1,0 +1,367 @@
+{
+	"intro_narration": [
+		{
+			"speaker": "???",
+			"text": "The cold was a venom, sinking into my bones, absolute and immediate. It wasn't just temperature; it was the cold of a million years, clinging to my skin like frostbite.",
+			"event": "none"
+		},
+		{
+			"speaker": "???",
+			"text": "The air was a stagnant soup of ozone, metallic tang, and the cloying scent of something indefinably wrong, like old blood and electrical fire.",
+			"event": "none"
+		},
+		{
+			"speaker": "???",
+			"text": "I tried to push myself up, but my limbs were leaden.",
+			"event": "none"
+		},
+		{
+			"speaker": "???",
+			"text": "The darkness was a crushing weight, pressing on my eyeballs until geometric patterns of frantic red and blue light flashed behind them.",
+			"event": "none"
+		},
+		{
+			"speaker": "???",
+			"text": "I had no name, no past, only the frantic, choking pulse of terror in my ears.",
+			"event": "none"
+		},
+		{
+			"speaker": "???",
+			"text": "I scraped my knuckles along the wall. The sound of my own breathing was frantic and ragged.",
+			"event": "none"
+		},
+		{
+			"speaker": "???",
+			"text": "Then, the voice—a sterile, amplified command that vibrated in the marrow of my jawbone.",
+			"event": "none"
+		},
+		{
+			"speaker": "???",
+			"text": "\"WAKE UP, %NAME%. The Sisyphus Protocol demands payment. The Fragments are your absolution.\"",
+			"event": "none"
+		},
+		{
+			"speaker": "???",
+			"text": "The name %NAME% ripped a spike of pure adrenaline through me. Absolution? The ground beneath my feet shifted, gritty and sharp.",
+			"event": "none"
+		},
+		{
+			"speaker": "???",
+			"text": "My searching hand closed on something small and worn.",
+			"event": "none"
+		},
+	],
+	 "fragment_1": [
+		{
+			"speaker": "System",
+			"text": "Looking at the red wooden block, your mind rang in high pitch as flashes of unlcear memories appear.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I stood, momentarily blind, in a kitchen soaked in morning sun. The air was thick with the beautiful, agonizing smell of toast and cinnamon. Laughter, small and bell-like, was a knife turning in my gut.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "A woman, her face a blur of light, stood at the counter.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "A small, perfect hand reached up, holding the twin of the red block.",
+			"event": "none"
+		},
+		{
+			"speaker": "Child",
+			"text": "Daddy, look! We’ll build a tower,",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The child chirped, her voice vibrating with innocent joy.",
+			"event": "none"
+		},
+		{
+			"speaker": "Woman",
+			"text": "“A,”",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The woman’s voice, a memory too precious to bear, corrected gently.",
+			"event": "none"
+		},
+		{
+			"speaker": "Woman",
+			"text": "A is for Adam. The start of everything.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I felt a gut-wrenching ache of love and loss that was not my own. I tried to move, to shout her name, but was paralyzed.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "TThen, the silence was ripped apart—a sudden, wet WRENCH of twisting metal that became a deafening, diamond-sharp PITCH of shattering glass. The sound was so massive it felt like my internal organs were rupturing.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I slammed back into the dark, screaming. The memory’s sound had left a phantom ringing, and a spike of blinding pain lanced through my temple.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I clawed at the air, dry-heaving the nonexistent cinnamon scent. Adam. A. I knew the ending of that perfect scene was the crash, and the knowledge was a poison.",
+			"event": "none"
+		},
+		{
+			"speaker": "Voice",
+			"text": "Pathetic. Still denying the impact, Architect? ",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The voice was now laced with vicious contempt.",
+			"event": "none"
+		},
+		{
+			"speaker": "Voice",
+			"text": "The truth must be faced. Seek the next fragment before the decay sets in.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I found a gap—a fissure in the wall that smelled like stagnant air and fear—and forced my body through.",
+			"event": "none"
+		},
+	],
+	"fragment_2": [
+		{
+			"speaker": "%NAME%",
+			"text": "I dragged myself into a chamber where the air was thick and moist. A single, faint pulse of blue-white light originated from a corner.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "Crawling toward it, I found a tangled cluster of cold, heavy medals. The gold was tarnished, and the ribbon had been deliberately shredded.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The weight of the metal felt like an unbearable anchor in my hand.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "As I held them, the ambient cold intensified into a deep, electric shock, and the air filled with the caustic smell of burning circuitry and antiseptic.",
+			"event": "none"
+		},
+		{
+			"speaker": "SYSTEM",
+			"text": "Memory Flash: The Archive Room",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I was wearing a stained lab coat. My hands shook violently as I stared at a steel gurney. A figure lay there, wrapped in metallic foil, its face visible—my own face, grey, sunken, and utterly lifeless.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "A display console flashed a warning: SUBJECT INTEGRITY: 0.1% - CORE CASCADING FAILURE.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I didn't recognize the face, but the voice was my own, tight with manic despair.",
+			"event": "none"
+		},
+		{
+			"speaker": "PAST %NAME%",
+			"text": "“I have to keep it, Elara! The guilt—it’s the only proof I was human! If I lose the guilt, I lose everything!”",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "My past self shrieked, tears blurring the text I typed on a console:",
+			"event": "none"
+		},
+		{
+			"speaker": "PAST %NAME%",
+			"text": "“Execute full memory archive. Initiate Protocol IKP. Wipe ALL surface data. Load subject into the Perpetual Dark. Project Chimera is now SELF-CONTAINMENT.”",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "A female assistant, Elara, her face streaked with tears, slapped my arm.",
+			"event": "none"
+		},
+		{
+			"speaker": "Elara",
+			"text": "%NAME% ! He’s gone, you’re just trapping his ghost! This is a rejection of reality! You were supposed to live!",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "My past self was laughing now, a broken, hysterical sound.",
+			"event": "none"
+		},
+		{
+			"speaker": "PAST %NAME%",
+			"text": "No, no. I'll make sure he never gets the quiet he wanted. He will remember, forever. He will be the architect of his own hell.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I released the medals with a howl. The image of my own dead face on the gurney was seared onto my retina.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I staggered, the sudden realization that I was the Subject, the prisoner, the ghost I was fighting to forget, making me vomit bile onto the cold, gritty floor. ",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The terror was no longer abstract; it was the realization that I was living in a trap built by a smarter, more broken version of myself.",
+			"event": "none"
+		},
+		{
+			"speaker": "Voice",
+			"text": "Good,",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The voice hissed, closer now, a rasping whisper that felt like a parasite burrowing into my ear.",
+			"event": "none"
+		},
+		{
+			"speaker": "Voice",
+			"text": "The Subject accepts his purpose. Now, find the reflection. Accept the consequence.",
+			"event": "none"
+		},
+	],
+	"MIRROR_BOSS_INTRO": [
+		{
+			"speaker": "%NAME%",
+			"text": "Blindly, I lurched toward the distant flicker of light.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The gap I had forced myself through widened into a passage, leading to a massive, echoing chamber. In the center, illuminated by cold, blue light, stood a towering, unbroken mirror.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "My foot struck something—the smooth, curved edge of glass.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I lowered my hand and grasped a sliver of curved, razor-sharp mirrored glass—a fragment of a rearview mirror, lying discarded at the base of the giant reflection.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "As the blood welled around the glass in my palm, the darkness, the cold, the voice, and my sanity shattered in one final, cataclysmic memory load.",
+			"event": "none"
+		},
+	],
+	"ending_scene": [
+		{
+			"speaker": "SYSTEM",
+			"text": "The Truth",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The flash was not a sequence; it was a flood of pure, agonizing FEELING.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The heat of the argument. The blinding rage in the car. The sickening inertia as the vehicle left the road.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The instant the metal impacted the central concrete pillar. The sudden, absolute silence of the back seat.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I hadn't walked away untouched; I walked away alone.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": " I hadn't just caused the crash; I had spent the next three days in a state of psychotic breakdown, designing the Sisyphus system not to escape justice, but to escape the excruciating memory of Julie's untouched red wooden block lying beside the wreckage.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The Sisyphus Protocol was a self-sustaining torture mechanism.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The Perpetual Dark was designed for a consciousness to continuously re-learn and re-experience the guilt until it achieved Integrity.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The Voice was the recorded, digitized echo of the real %NAME% —the Architect— a spectral guardian of guilt, designed to break my amnesia (the surface identity) every time it manifested, ensuring the loop continued.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I collapsed, my body convulsing in a seizure of despair.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "My scream was trapped in my throat, a silent, internal rupture. I was not just the architect of my prison; I was the maintenance man of my own damnation.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "I had built this cage for my soul, and I was the only one with the key.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "\"I… I am the monster,\" I choked out, tasting bile and copper.",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "The voice—the IKP—was no longer synthetic. It sounded like a tired man weeping.",
+			"event": "none"
+		},
+		{
+			"speaker": "Voice",
+			"text": "You chose the cage, %NAME%,",
+			"event": "none"
+		},
+		{
+			"speaker": "%NAME%",
+			"text": "It whispered, broken and hollow.",
+			"event": "none"
+		},
+		{
+			"speaker": "Voice",
+			"text": "Now, you must choose to unlock it. You must accept what A is for—Absolution, or Annihilation. The true ending awaits outside the dark. But know this: every path leads back to the red block.",
+			"event": "none"
+		},
+		{
+			"speaker": "SYSTEM",
+			"text": "The End...",
+			"event": "none"
+		},
+	]
+}
